@@ -1134,7 +1134,6 @@ function goupdate()
  --   sampAddChatMessage('Текущая версия: '..thisScript().version..". Новая версия: "..ver, -1)
     downloadUrlToFile("https://github.com/l1m3333/admintools/blob/main/AdminTools.luac?raw=true", thisScript().path, function(id, status, p1, p2)
     	if status == dlstatus.STATUS_ENDDOWNLOADDATA then
-            thisScript():reload()
         end
     end)
 end
@@ -1421,7 +1420,7 @@ local helloText = [[
 Данный скрипт был создан для облегчения работы администрации.
 Он является многофункциональным.
 Если у вас есть идея, вы можете описать ее в админ-беседе.
-Автором скрипта явлется: King_Agressor. 
+Автором скрипта явлется: King_Agressor 
 ===================================================================
 Последние обновления:
 - 1. Теперь кнопка OFFTOP в авто-репорте работает корректно.
